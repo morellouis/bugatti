@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/seconday.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.25/bundled/lenis.min.js"></script> 
+    <link rel="icon" href="assets/images/logo.png">
+    <title>Document</title>
+</head>
+<body>
+    <section id="loader">
+        <h1 id="loader_title">
+            <div class="char">B</div>
+            <div class="char">U</div>
+            <div class="char">G</div>
+            <div class="char">A</div>
+            <div class="char">T</div>
+            <div class="char">T</div>
+            <div class="char">I</div>
+        </h1>
+        <div id="fond">
+            <div id="loading_bar"></div>
+        </div>
+    </section>
+    <section id="navigation">
+        <a href="https://www.bugatti.com/fr/the-bugatti-lifestyle/introduction/#." class="navigation_btn hover_cursor"><h2 data-chiffre="01">BUGATTI LIFESTYLE</h2></a>
+        <a href="https://www.bugatti.com/fr/the-bugatti-heritage/introduction/#." class="navigation_btn hover_cursor"><h2 data-chiffre="02">HÉRITAGE BUGATTI</h2></a>
+        <a href="https://www.bugatti.com/fr/the-bugatti-models/introduction/" class="navigation_btn hover_cursor"><h2 data-chiffre="03">MODÈLES</h2></a>
+        <a href="https://www.bugatti.com/fr/customization/introduction/#." class="navigation_btn hover_cursor"><h2 data-chiffre="04">PERSONNALISATION</h2></a>
+        <a href="https://www.bugatti.com/fr/ownership/introduction/#." class="navigation_btn hover_cursor"><h2 data-chiffre="05">PROPRIÉTÉ BUGATTI</h2></a>
+    </section>
+    <div id="cursor"></div>
+    <div id="follower"></div>
+    <header>
+        <nav>
+            <a href="/" class="hover_cursor"><h2>BUGATTI</h2></a>
+            <button id="btn_nav" class="hover_cursor"><img src="assets/images/navigation_btn.png" alt=""></button>
+        </nav>
+    </header>
+
+    <section id="main_section">
+        <video loop muted id="main_video">
+            <source src="assets/videos/bilan_bugatti.mp4" type="video/mp4">
+            <!-- mettre les autres formats de video -->
+        </video>
+        <h1>SAE BUGATTI</h1>
+    </section>
+    <section id="secondary_section">
+        <h2 id="title_test" style="color: white;">title test</h2>
+    </section>
+
+    <footer id="footer_settings-bar">
+        <a href="/">
+            <img id="logo_B" src="assets/images/logo.png" alt="Logo" class="hover_cursor">
+        </a>
+        <div id="audio_container">
+            <p id="audio_btn" class="hover_cursor">audio off</p>
+            <input type="range"  min="0" max="200" step="1" value="100" id="change_volume">
+        </div>
+    </footer>
+
+    <div id="scroll_bar"></div>
+    <script src="assets/scripts/pages.js" type="module"></script>
+</body>
+</html>
